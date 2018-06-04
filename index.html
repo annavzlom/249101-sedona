@@ -5,12 +5,13 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+   <div class="wrapper">
     <header class="main header">
       <nav class="main navigation">
        <a class="main-header-logo">
         <img src="#" alt="Логотип Седона">
        </a>
-        <ul class=site-navigation>
+        <ul class="site-navigation">
          <li><a href="#">Информация</a></li>
          <li><a href="#">Фото и видео</a></li>
          <li><a href="#">Карта штата</a></li>
@@ -19,19 +20,28 @@
       </nav>
     </header>
     <main class="container">
-
+    <div class="welcome">
+     <img src="#">
+     <img src="#">
+     <img src="#">
+     <img src="#">
+    </div>
       <h1 class="main-caption">СЕДОНА-НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h1>
        <p class="cite">рассмотрим 5 причин по которым седона круче,чем гранд каньон!</p>
 
-      <div class="block">
+
        <section class="hotel">
+       <div class="block">
         <h2 class="desc">Настоящий городок</h2>
         <p class="indention">-№1-</p>
         <p class="indention">Седона-не атракцион для туристов,там течёт своя жизнь</p>
+       </div>
+       <div class="pic">
         <img src="#" alt="Вид на отель">
+       </div>
        </section>
 
-       <section class="features">
+
         <ul class="features-list">
          <li class="feature-item">
            <img src="#">
@@ -49,17 +59,19 @@
              <p>Не только китайского,но и местного производства!</p>
          </li>
         </ul>
-       </section>
-      </div>
 
-      <div class="block">
-       <section class="hotel">
+        <section class="hotel">
+        <div class="pic">
         <img src="#" alt="Достопримечательности">
+        </div>
+         <div class="block">
          <h2 class="desc">Там есть мост дьявола</h2>
           <p class="indention">-№2-</p>
           <p class="indention">Да,по нему можно пройти!Если конечно вы осмелитесь</p>
+         </div>
        </section>
-       <section class="features">
+
+
         <ul class="features-list">
          <li class="feature-item">
             <h3>Небольшая площадь</h3>
@@ -77,48 +89,53 @@
             <p>Большинство едет в Гранд Каньон и толпится там</p>
          </li>
         </ul>
-       </section>
-      </div>
+
+
 
       <section class="interest">
        <h1 class="heading">Заинтересовались?</h1>
         <p>Укажите предпологаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       </section>
 
-      <img src="#" alt="Карта">
       <div class="search">
-       <h3>Поиск гостиницы в Седоне</h3>
+       <span class="button button-search">Поиск гостиницы в Седоне</span>
         <form action="#" name="myform">
           <p>
-           <label for="arriv">Дата заезда:</label>
+           <label for="arriv">Дата заезда: </label>
+           <span class="calendar"></span>
            <input id="arriv" type="date" name="arriv">
           </p>
           <p>
-           <label for="depar">Дата выезда:</label>
+           <label for="depar">Дата выезда: </label>
+           <span class="calendar"></span>
            <input id="depar" type="date" name="depar">
           </p>
           <p>
            <label for="grown">Взрослые:</label>
-           <input id="grown" type="number" name="grown">
+           <span class="minplus"></span>
+           <input id="grown" type="text" name="grown" value="2">
+           <span class="minplus"></span>
            <label for="baby">Дети</label>
-           <input id="baby" type="number" name="baby">
+           <span class="minplus"></span>
+           <input id="baby" type="text" name="baby" value="0">
+           <span class="minplus"></span>
           </p>
           <p>
             <input type="submit" value="Найти">
           </p>
         </form>
+        <img src="#" alt="Карта">
       </div>
     </main>
-    <footer class="main-footer">
+    <footer class="footer">
       <p class="visitsedona">#visitsedona</p>
-      <div class="footer-social">
-       <ul>
-        <li><a class="social-button" href="#"></li>
-        <li><a class="social-button" href="#"></li>
-        <li><a class="social-button" href="#"></li>
+       <ul class="footer-social">
+        <li><a class="social-button" href="#"></a></li>
+        <li><a class="social-button" href="#"></a></li>
+        <li><a class="social-button" href="#"></a></li>
        </ul>
-      </div>
-      <p class="academy">website by<img src="#">html academy></p>
+      <p class="academy"><a href="https://htmlacademy.ru/">website by<img src="#">html academy</a></p>
     </footer>
+  </div>
 </body>
 </html>
