@@ -1,0 +1,300 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans" , Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.welcome {
+  background-image: url("../img/background-photo.jpg");
+}
+
+.filter {
+  background-image: url("../img/filter background.jpg");
+}
+
+.filter,
+.welcome {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.infrast {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.range-tumbler {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+.present button {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+
+.subject {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.site-navigation {
+   list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+  font-weight: bold;
+}
+
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+
+.site-navigation a:focus {
+  color: #cacaca;
+}
+
+
+.active a {
+  color: #766357;
+}
+
+.option label {
+  color: #cacaca;
+  border-bottom: 1px dashed #81b3d2;
+}
+
+input[type="radio"]:hover + label{
+  color: #81b3d2;
+}
+
+input[type="radio"]:checked + label{
+  color: #000000;
+}
+
+
+input[type="text"]::-moz-placeholder {
+    color: #000000;
+}
+input[type="text"]::-webkit-input-placeholder {
+    color: #000000;
+}
+input[type="text"]:-ms-input-placeholder {
+  color: #000000;
+}
+input[type="text"]::-ms-input-placeholder {
+  color: #000000;
+}
+input[type="text"]::placeholder {
+  color: #000000;
+}
+
+.search input[type="text"] {
+  background-color: #f2f2f2;
+}
+
+.search input[type="text"]:hover {
+  background-color: #ebebeb;
+}
+
+.search input[type="text"]:focus {
+  background-color: #ffffff;
+}
+
+
+
+.option label:nth-of-type(1) {
+  color: #81b3d2;
+  border-bottom: none;
+}
+
+.main-caption,
+.vantage,
+.visitsedona,
+.found-three,
+.relation h2 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+
+.main-caption {
+  line-height: 26px;
+}
+
+.block {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.features-list {
+  background-color: #eeeeee;
+}
+
+.feature-item {
+  list-style: none;
+
+}
+
+.heading {
+  font-size: 30px;
+}
+
+.search button  {
+  font-size: 21px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #766357;
+  border: none;
+
+
+}
+
+.search .blue {
+  background-color: #81b3d2;
+  border: none;
+}
+
+.search .quest:hover {
+  background-color: #604e43;
+
+}
+.search .quest:focus {
+  background-color: #503e33;
+}
+
+.blue:hover {
+  background-color: #669ec0;
+}
+
+.blue:focus {
+  background-color: #5496bd;
+}
+
+.search input{
+   background-color: #f2f2f2;
+   border: none;
+}
+.academy a{
+   color: #000000;
+   font-size: 14px;
+}
+
+.social-button {
+   background-color: #81b3d2;
+}
+
+
+.key {
+  background-color: #81b3d2
+}
+
+.key:hover {
+  background-color: #669ec0;
+}
+.relation .key:focus {
+  background-color: #5496bd;
+}
+
+.pin {
+  background-color: #766357;
+}
+.pin:hover {
+  background-color: #604e43;
+}
+.relation .pin:focus {
+  background-color: #503e33;
+}
+
+.relation a {
+  color: #ffffff;
+}
+
+.hotels .places {
+  color: #000000;
+  font-weight: bold;
+  font-size: 21px;
+}
+.places:hover {
+  color:#81b3d2;
+}
+
+.places:focus {
+  color: #cacaca;
+}
+
+.pin {
+  background-color: #766357;
+}
+
+.hotels span {
+  background-color: #f2f2f2;
+  color: #666666;
+}
+
+
+.search .minus,
+.search .plus {
+  background-color: #f2f2f2;
+  color: #a9a9a9;
+}
+
+.search .minus:hover,
+.search .plus:hover {
+  color: #000000;
+}
+
+.search .minus:focus,
+.search .plus:focus {
+  color: #81b3d2;
+}
+
+.search label {
+  color: #000000;
+  font-weight: bold;
+}
+
+
+
+.footer-social li {
+   list-style: none;
+}
+input[type="radio"] {
+  list-style: none;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.filter input[type="text"]::-moz-placeholder {
+    color: #ffffff;
+}
+.filter input[type="text"]::-webkit-input-placeholder {
+    color: #ffffff;
+}
+.filter input[type="text"]:-ms-input-placeholder {
+  color: #ffffff;
+}
+.filter input[type="text"]::-ms-input-placeholder {
+  color: #ffffff;
+}
+.filter input[type="text"]::placeholder {
+  color: #ffffff;
+}
