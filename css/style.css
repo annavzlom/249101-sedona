@@ -12,16 +12,20 @@ body {
   min-height: 1750px;
 }
 
-html { 
-  box-sizing: border-box; 
+html {
+  box-sizing: border-box;
 }
 
-*, *::before, *::after { 
-  box-sizing: inherit; 
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 a {
   text-decoration: none;
+}
+
+a:focus {
+  outline: 0;
 }
 
 .welcome {
@@ -64,6 +68,10 @@ a {
 .site-navigation {
    list-style: none;
 }
+
+/*.site-navigation li {
+   padding: 15px;
+}*/
 
 .site-navigation a {
   color: #000000;
@@ -141,6 +149,7 @@ input[type="text"]::placeholder {
 
 .main-caption {
   line-height: 26px;
+
 }
 
 .block {
@@ -148,9 +157,7 @@ input[type="text"]::placeholder {
   background-color: #81b3d2;
 }
 
-.features-list {
-  background-color: #eeeeee;
-}
+
 
 .feature-item {
   list-style: none;
@@ -318,47 +325,202 @@ input[type="radio"] {
   color: #ffffff;
 }
 
-/*Сетка*/
+/*стили к сетке*/
 
-.main-header {
-  background-color: #89f3cf;
+.wrapper {
+  background-color: #ffffff;
+  min-width: 768px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.main-navigation {
+.site-navigation {
   display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 0;
+  background-color: #ffffff;       /*#89f3cf;*/
+}
+
+.site-navigation li {
+  position: relative;
+  right: 30px;
 }
 
 .main-header-logo {
   width: 138px;
   height: 70px;
-}
-.site-navigation {
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-.wrapper {
-  width: 1200px;
-  margin: 0 auto;
-}
+  position: relative;
+  top: -16px;
+  z-index: 10;
 
-.site-navigation {
-  width: 100%;
-  justify-content: space-around;
 }
 
 .welcome {
   display: flex;
-  
-  height: 512px;
   background-size: cover;
-  margin-top: -17px;
+  min-height: 508px;
+  position: relative;
+  top: -65px;
 }
+
 .main-caption,
 .cite {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: relative;
+  top: -23px;
+}
+
+.cite {
+  margin-top: 30px;
+  width: 550px;
+}
+
+.hotel {
+  height: 256px;
+  display: flex;
+  margin-top: 27px;
+}
+
+.block {
+  width: 400px;
+}
+
+.block h2,
+.block p {
   text-align: center;
 }
 
+.block h2 {
+  margin-top: 48px;
+}
 
+.indention {
+  margin-top: 20px;
+  width: 290px;
+  position: relative;
+  left: 25px;
+}
 
+.pic img{
+   width: 800px;
+   height: 256px;
+   margin
+}
 
+.features-list {
+  display: flex;
+  margin-top: 55px;
+  margin-bottom: 70px;
+  background-color: #ffffff;
+  padding: 0;
+}
+
+.feature-item {
+  width: 400px;
+  height: 255px;
+  background-color: #ffffff;   /*#ab3535;*/
+}
+
+.feature-item svg {
+  position: relative;
+  left: 162px;
+}
+
+.feature-item p,
+.vantage {
+   width: 275px;
+   text-align: center;
+   position: relative;
+   left: 65px;
+}
+
+.bridge {
+   position: relative;
+   top: -52px;
+}
+
+.interest {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #ffffff;
+  top: -198px;
+  height: 90px;
+}
+
+.heading {
+  text-align: center;
+  position: relative;
+  top: 28px;
+}
+
+.bottom {
+  margin-top: 80px;
+  position: relative;
+  top: -113px;
+}
+
+.interest p {
+  width: 440px;
+  text-align: center;
+  position: relative;
+  left: 400px;
+  top: 15px;
+}
+
+.bottom .vantage {
+  width: 130px;
+  position: relative;
+  top: 10px;
+  left: 35%;
+
+}
+
+.bottom p {
+  position:relative;
+  top: 19px;
+}
+
+.map-wrapper img {
+  width: 1200px;
+  height: 593px;
+  position: absolute;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 35px;
+  position: relative;
+  top: 500px;
+}
+
+.footer-social {
+  background-color: #81b3d2;
+  height: 40px;
+  position: relative;
+  top: 28px;
+
+}
+
+.academy span {
+  position: relative;
+  left: 20px;
+}
+
+.academy svg {
+  position: relative;
+  left: 30px;
+  top: 15px;
+}
+
+.visitsedona {
+  position: relative;
+  top: 17px;
+  padding-bottom: 15px;
+}
