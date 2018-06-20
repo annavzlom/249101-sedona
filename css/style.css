@@ -9,6 +9,17 @@ body {
   text-transform: uppercase;
   background-color: #f2f2f2;
 
+
+  background-color: #7f8560;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+ box-sizing: border-box;
+
 }
 
 html {
@@ -17,18 +28,39 @@ html {
 
 *, *::before, *::after {
   box-sizing: inherit;
+
 }
 
 a {
   text-decoration: none;
 }
 
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.welcome {
+  background-image: url("../img/background-photo.jpg");
+  margin-bottom: 80px;
+}
+
+.welcome:after{
+  content: '';
+  width: 100%;
+  height: 57px;
+  position: absolute;
+  background: url(../img/header-bg-bottom.png) center 0 no-repeat;
+  bottom: 0;
+  left: 0;
+}
+
+
 a:focus {
   outline: 0;
 }
-body{
-  /*background: url(../img/temp.jpg) center 0 no-repeat;*/
-}
+
 
 .filter {
   background-image: url("../img/filter-background.jpg");
@@ -63,6 +95,7 @@ body{
   bottom: 0;
   left: 0;
 }
+
 
 .infrast {
   color: #ffffff;
@@ -354,35 +387,42 @@ input[type="radio"] {
   margin: 0 auto;
 }
 
-/*.site-navigation {
+.site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  height: 55px;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+
+}
+.site-navigation li {
+  width: 20%;
   display: flex;
   justify-content: space-around;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-top: 0;
-  background-color: #ffffff;       /*#89f3cf;*/
+  align-items: center;
 }
 
-/*.site-navigation li {
-  position: relative;
-  right: 30px;
-}*/
+.site-navigation li:nth-of-type(3) {
+  margin-left: 20%;
+}
+
 
 .main-header-logo {
   width: 138px;
   height: 70px;
-  position: relative;
-  top: -16px;
+  position: absolute;
+  left: 44.3%;/*880px;*/
   z-index: 10;
-
 }
+
 
  .welcome {
   display: flex;
- /* background-size: cover;*/
-  height: 510px;
+  height: 508px;
   position: relative;
-  top: -65px;
+
 }
 
 .main-caption,
@@ -396,14 +436,14 @@ input[type="radio"] {
 }
 
 .cite {
-  margin-top: 30px;
+  margin-top: 32px;
   width: 550px;
 }
 
 .hotel {
   height: 256px;
   display: flex;
-  margin-top: 27px;
+  margin-top: 32px;
 }
 
 .block {
@@ -417,13 +457,17 @@ input[type="radio"] {
 
 .block h2 {
   margin-top: 48px;
+  margin-left: 33.5%;
+  width: 130px;
 }
 
 .indention {
-  margin-top: 20px;
+  margin-top: 5.8%;
   width: 290px;
-  position: relative;
-  left: 25px;
+  margin-left: 14%;
+}
+.life {
+ margin-top: -4%;
 }
 
 
