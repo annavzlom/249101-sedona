@@ -81,10 +81,6 @@ a:focus {
   position: relative;
 }
 
-.header-banner{
-  margin-top: -65px;
-  margin-bottom: 40px;
-}
 
 .welcome:after{
   content: '';
@@ -432,7 +428,7 @@ input[type="radio"] {
   margin-right: auto;
   text-align: center;
   position: relative;
-  top: -23px;
+  top: -21px;
 }
 
 .cite {
@@ -466,50 +462,73 @@ input[type="radio"] {
   width: 290px;
   margin-left: 14%;
 }
-.life {
- margin-top: -4%;
-}
-
 
 .features-list {
   display: flex;
-  margin-top: 55px;
-  margin-bottom: 70px;
-  background-color: #ffffff;
+  width: 100%;
+  height: 300px;
+  margin: 0;
   padding: 0;
-}
-
-.feature-item {
-  width: 400px;
-  height: 255px;
-  background-color: #ffffff;   /*#ab3535;*/
+  background-color: #ffffff;
 }
 
 .feature-item svg {
   position: relative;
-  left: 162px;
+  left: 160px;
+  top: 60px;
+}
+
+.feature-item {
+  width: 100%;
 }
 
 .feature-item p,
 .vantage {
    width: 275px;
    text-align: center;
-   position: relative;
-   left: 65px;
+}
+.vantage {
+  margin-left: 60px;
+  margin-top: 83px;
 }
 
-.bridge {
-   position: relative;
-   top: -52px;
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  height: 256px;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+  background-color: #eeeeee;
+}
+
+.bottom .feature-item {
+  width: 33%;
+
+}
+.bottom .vantage {
+  width: 125px;
+  margin-top: 46px;
+  margin-left: 135px;
+}
+
+.bottom p {
+  margin-left: 60px;
+  margin-top: -5px;
+
+}
+
+.feature-list p {
+  margin-left: 62px;
+  margin-top: 15px;
 }
 
 .interest {
   display: flex;
   flex-direction: column;
-  position: relative;
-  background-color: #ffffff;
-  top: -198px;
-  height: 90px;
+  height: 290px;
 }
 
 .heading {
@@ -518,11 +537,6 @@ input[type="radio"] {
   top: 28px;
 }
 
-.bottom {
-  margin-top: 80px;
-  position: relative;
-  top: -113px;
-}
 
 .interest p {
   width: 440px;
@@ -532,13 +546,7 @@ input[type="radio"] {
   top: 15px;
 }
 
-.bottom .vantage {
-  width: 130px;
-  position: relative;
-  top: 10px;
-  left: 35%;
 
-}
 
 .bottom p {
   position:relative;
@@ -548,22 +556,40 @@ input[type="radio"] {
 .map-wrapper img {
   width: 1200px;
   height: 593px;
-  position: absolute;
+  position: relative;
 }
 
 .footer {
+  margin-bottom: -20px;
+  height: 122px;
+  background-color: #ffffff;
+  opacity: 0.8;
   display: flex;
+  width: 1200px;
   justify-content: space-around;
   padding-bottom: 35px;
-  position: relative;
-  top: 500px;
+  position: absolute;
+  top: 2643px;
 }
 
 .footer-social {
-  background-color: #81b3d2;
+  width: 35%;
+
   height: 40px;
   position: relative;
   top: 28px;
+}
+
+.social-button {
+
+  padding: 10px 10px;
+}
+
+
+.academy {
+  width: 25%;
+  margin-left: -50px;
+  margin-top: 25px;
 
 }
 
@@ -574,35 +600,38 @@ input[type="radio"] {
 
 .academy svg {
   position: relative;
-  left: 30px;
+  left: 25px;
   top: 15px;
 }
 
 .visitsedona {
+  width: 25%;
+  margin-left: 125px;
+  margin-top: 33px;
   position: relative;
   top: 17px;
   padding-bottom: 15px;
 }
 
-.welcome-container {
+.welcome-container{
   width: 100%;
   padding-top: 78px;
 }
 
-.welcome-container img {
+.welcome-container img{
   display: block;
   margin: 0px auto;
 }
 
-img.welcome-container-image-g {
- margin-top: 9px;
+img.welcome-container-image-g{
+  margin-top: 9px;
 }
 
-img.welcome-container-image-s {
-   margin-top: 54px;
+img.welcome-container-image-s{
+  margin-top: 54px;
 }
 
-img.welcome-container-image-c {
+img.welcome-container-image-c{
   margin-top: 55px;
 }
 
