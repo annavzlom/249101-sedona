@@ -48,7 +48,7 @@
             <span class="parking-wifi">Парковка</span>
            </label>
           </p>
-          <p>
+          <p class="wifi">
            <input class="visually-hidden" id="wifi" type="checkbox" name="wifi">
            <label for="wifi">
             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
@@ -58,7 +58,7 @@
           </p>
          </div>
 
-         <!-- <div class="infrast"> -->
+         
          <div class="infrast-block lodging">
           <p class="subject">Тип жилья:</p>
           <p class="subject-block">
@@ -77,7 +77,7 @@
             <span>Мотель</span>
            </label>
           </p>
-          <p>
+          <p class="wifi">
            <input class="visually-hidden" id="wi" type="checkbox" name="wi">
            <label for="wi">
             <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
@@ -86,16 +86,25 @@
            </label>
           </p>
          </div>
-        <!-- </div> закрытие infrast-->
+        
 
          <div class="infrast-block slider">
-          <p class="subject">Стоимость в сутки(p): </p>
+          <p class="subject">Стоимость в сутки (p): </p>
+          <div class="block-of-before">
+           <input class="of-before" type="text" placeholder="От 0">
+           <input class="of-before" type="text" placeholder="До 3000">
+          </div>
           <div class="range">
            <div class="range-gray">
             <div class="range-c1"></div>
            </div>
-           <input class="range-tumbler range-tumbler-min" type="text" placeholder="От 0">
-           <input class="range-tumbler range-tumbler-max" type="text" placeholder="До 3000">
+            <button type="button" class="range-tumbler range-tumbler-min">От
+             <div class="dot"></div>
+            </button>
+           <button type="button" class="range-tumbler range-tumbler-max">До 3000
+             <div class="dot"></div>
+           </button>
+           
           </div>
           <div class="present">
            <button type="submit">Показать</button>
@@ -110,15 +119,15 @@
        <div class="found">
 
         <div class="option"><span class="found-three"> НАЙДЕНО: 3 </span>
-         <span> сортировка</span>
+         <span class="sorting"> сортировка:</span>
          <input class="visually-hidden style" id="price" type="radio" name="price" value="По цене">
-         <label for="price">По цене</label>
+         <label for="price"> по цене</label>
 
          <input class="visually-hidden style" id="type" type="radio" name="price" value="По типу">
-         <label for="type">По типу</label>
+         <label for="type">по типу</label>
 
          <input class="visually-hidden style" id="rati" type="radio" name="price" value="По рейтигу">
-         <label for="rati">По рейтингу</label>
+         <label for="rati">по рейтингу</label>
         </div>
 
         <div class="switch">
@@ -138,13 +147,14 @@
      </section>
 
      <div class="gallery">
+      <div class="hotels-border">
       <section class="hotels">
        <div class="picture">
         <img src="img/amara.jpg" alt="Гостиница Amara Resort" width="135" height="90">
        </div>
        <div class="relation">
         <a href="#" class="places">AMARA RESORT & SPA</a>
-        <p>Гостиница  от 4000 р.</p>
+        <p>Гостиница  <span>от 4000 р.</span></p>
         <a class="key" href="#">Подробнее</a>
         <a class="pin" href="#">Забронировать</a>
        </div>
@@ -159,22 +169,24 @@
          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
          </svg>
         </div>
-        <span>Рейтинг:8,5</span>
+        <span>Рейтинг: 8,5</span>
        </div>
       </section>
+     </div>
 
+     <div class="hotels-border">
       <section class="hotels">
        <div class="picture">
         <img src="img/desert.jpg" alt="Мотель Desert Quail inn" width="135" height="90">
        </div>
        <div class="relation">
         <a href="#" class="places">DESERT QUAIL INN</a>
-        <p>Мотель  от 3000 р.</p>
+        <p>Мотель<span class="motel">от 3000 р.</span></p>
         <a class="key" href="#">Подробнее</a>
         <a class="pin" href="#">Забронировать</a>
        </div>
        <div class="rating">
-        <div class="star">
+        <div class="star desert">
          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
          </svg>
          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
@@ -182,33 +194,36 @@
          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
          </svg>
         </div>
-        <span>Рейтинг:8,9</span>
+        <span>Рейтинг: 8,9</span>
        </div>
       </section>
+      </div>
 
-      <section class="hotels">
+      <div class="hotels-border">
+      <section class="hotels  poco-diablo">
        <div class="picture">
         <img src="img/poco-diablo.jpg" alt="Вилла Poco Diablo" width="135" height="90">
        </div>
        <div class="relation">
         <a  href="#" class="places">VILLAS AT POCO DIABLO</a>
-        <p>Апартаменты  от 2000 р.</p>
+        <p>Апартаменты  <span class="apartments">от 2000 р.</span></p>
         <a class="key" href="#">Подробнее</a>
         <a class="pin" href="#">Забронировать</a>
        </div>
        <div class="rating">
-        <div class="star">
+        <div class="star villas">
          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
          </svg>
          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/>
          </svg>
         </div>
-        <span>Рейтинг:8,9</span>
+        <span>Рейтинг: 8,9</span>
        </div>
       </section>
+      </div>
      </div>
     </main>
-    <footer class="footer">
+    <footer class="footer footer-info">
      <div class="footer-inner">
      <p class="visitsedona">#visitsedona</p>
       <div class="footer-social">

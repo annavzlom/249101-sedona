@@ -71,7 +71,6 @@ a:focus {
 
 .welcome {
   background-image: url("../img/header-bg.jpg");
-  /*background-color: #ffffff;*/
   background-position: center -60px;
   position: relative;
 }
@@ -304,7 +303,7 @@ input[type="text"]::placeholder {
   color: #ffffff;
 }
 
-.places {
+.relation .places {
   color: #000000;
   font-weight: bold;
   font-size: 21px;
@@ -443,7 +442,7 @@ input[type="radio"] {
 }
 
 .cite {
-  margin-top: 32px;
+  margin-top: 37px;
   width: 550px;
 }
 
@@ -565,8 +564,9 @@ input[type="radio"] {
   top: 19px;
 }
 
-.footer {
+.footer-index {
   position: relative;
+  top: -389px;
   min-height: 593px;
 }
 
@@ -651,26 +651,27 @@ img.welcome-container-image-c{
 /*POPUP*/
 .search form {
   position: absolute;
+  display: none;
   width: 100%;
-  top: 83px;
-  z-index: 10;
+  top: 86px;
+  z-index: 40;
   background-color: #ffffff;
 }
 
 .quest {
-  padding: 30px 20px;
+  padding: 33px 20px;
+  vertical-align: center;
   text-transform: uppercase;
 }
 
 .popup-content {
   border: none;
-  margin-top: -2px;
 }
 
 .popup-content p {
   display: flex;
-  margin-top: 33px;
-  margin-left: 18px;
+  margin-top: 51px;
+  margin-left: 17px;
   align-items: center;
   justify-content: center;
 }
@@ -682,21 +683,21 @@ img.welcome-container-image-c{
    width: 340px;
    text-transform: uppercase;
    font-weight: bold;
-   padding: 12px 8px;
-   margin-left: 27px;
+   padding: 12px 10px;
+   margin-left: 24px;
 }
 
 .popup-content svg {
   position: relative;
   top: 3px;
-  right: 30px;
+  right: 27px;
   z-index: 10;
 }
 
 .fill {
   display: flex;
   justify-content: space-between;
-  margin-top: 25px;
+  margin-top: 27px;
 }
 .fill input {
   width: 40px;
@@ -704,12 +705,14 @@ img.welcome-container-image-c{
   padding: 14px 0;
   text-align: center
 }
+
 .children {
-  margin-right: 50px;
+  margin-right: 47px;
 }
 .plus,
 .minus {
-  padding: 10px 10px;
+  padding: 7px 12px;
+
 }
 
 .adult,
@@ -721,12 +724,13 @@ img.welcome-container-image-c{
 }
 .adult label {
   position: relative;
-  left: -50px;
+  left: -39px;
+  margin-left: -5px;
   top: 12px;
 }
 
 .children label{
-  margin-right: 35px;
+  margin-right: 28px;
   margin-top: 12px;
 }
 fieldset .button-blue {
@@ -758,24 +762,20 @@ fieldset .button-blue {
   flex-direction: column;
   padding: 0 62px;
   margin-left: 10px;
-  margin-top: -10px;
+  margin-top: -12px;
   width: 20%;
 }
 
 .subject {
+  margin-top: 19px;
   margin-bottom: 0;
 }
 
 .subject-block {
   margin: 0;
   margin-top: 20px;
+  margin-bottom: 3px;
 }
-
-.infrast-block p:nth-of-type(3) {
-  margin-bottom: 0;
-  margin-top: 17px;
-}
-
 
 .infrast-block span {
   margin-left: 11px;
@@ -784,27 +784,213 @@ fieldset .button-blue {
 .infrast-block .parking-wifi {
   margin-left: 14px;
 }
+ .wifi {
+  margin-top: 2px;
+}
 
 
-/*.subject-block3 {
-  margin-top: 5px;
-}*/
+
 
 .lodging {
    padding-right: 40px;
    margin-left: 15px;
 }
 
+
+/*От до*/
 .slider {
-  width: 30%;
+  margin-left: 20.3%;
+  width: 36.7%;
 }
 
-.range {
+.block-of-before {
   display: flex;
+  width: 315px;
 }
 
+.of-before {
+  width: 159px;
+  text-transform: uppercase;
+  margin-top: 12px;
+  text-align: center;
+  padding: 8px 0;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
 
 .infrast svg {
   position:relative;
   top: 5px;
+}
+
+
+.range {
+  position: relative;
+  margin-top: 19px;
+}
+.range-gray {
+  width: 100%;
+  height: 2px;
+  background-color: #918381;
+}
+.range-c1 {
+  width: 80%;
+  height: 2px;
+  background-color: #ffffff;
+}
+.range-tumbler {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border: 1px solid gray;
+  width: 21px;
+  height: 21px;
+  border-radius: 100%;
+  border: none;
+  margin-top: -10px;
+  font-size:0;
+  background-color: #ffffff;
+}
+.range-tumbler-min {
+  left: 80%;
+}
+
+.range .dot {
+  position: relative;
+  left: 2px;
+  z-index: 40;
+  background-color: #ababab;
+  height: 4px;
+  width: 4px;
+  border-radius: 100%;
+}
+
+.present {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.present button {
+  padding: 8px 34px;
+  margin-right: 8px;
+  text-transform: uppercase;
+}
+
+
+.found {
+  display: flex;
+  width: 100%;
+  padding: 33px 0;
+}
+
+.option {
+  width: 50%;
+  margin-left: 72px;
+}
+
+.option .found-three {
+  font-size: 21px;
+}
+
+.option span,
+.option label {
+  font-size: 12px;
+  
+}
+
+.option label {
+  margin-left: 38px;
+}
+
+.sorting {
+  margin-left: 43px;
+}
+.switch {
+  width: 5%;
+  margin-left: 35.2%;
+}
+.switch svg:nth-of-type(2) {
+  margin-left: 7px;
+  margin-top: 8px;
+}
+
+.gallery {
+   width: 100%;
+}
+
+.hotels-border {
+  border-top: 1px solid #e5e5e5;
+}
+.hotels {
+  display: flex;
+  padding-top: 26px;
+  padding-bottom: 27px;
+  padding-left: 73px;
+}
+
+.relation {
+ margin-left: 2.8%;
+ margin-top: -4px;
+}
+
+.relation p {
+  margin-top: 9px;
+  margin-bottom: 17px;
+}
+
+.relation span {
+  margin-left: 33px;
+  background-color: #ffffff;
+}
+
+.relation .motel {
+  margin-left: 63px;
+}
+
+.relation .apartments {
+  margin-left: 15px;
+}
+
+.poco-diablo {
+  margin-top: 3px;
+}
+
+.key,
+.pin {
+  padding: 4px 17px;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.rating {
+  margin-left: 48.5%;
+}
+
+.rating .desert {
+  margin-left: 23px;
+}
+
+.rating .villas {
+  margin-left: 45px;
+}
+
+.star {
+  margin-bottom: 45px;
+}
+.rating span {
+  padding: 3px 17px;
+  margin-left: -26px;
+}
+
+.footer-info .footer-inner{
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer-info {
+  min-height: 122px;
+  position: relative;
+}
+
+.footer-info .visitsedona {
+  margin-left: 7px;
 }
