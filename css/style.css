@@ -185,14 +185,7 @@ input[type="text"]::placeholder {
   outline: 2px solid #e5e5e5;
 }
 
-.calendar:hover {
-  stroke: #000000;
-  fill: #000000;
-}
-.calendar:focus  {
-  stroke: #81b3d2;
-  fill: #81b3d2;
-}
+
 
 .main-caption,
 .vantage,
@@ -249,8 +242,28 @@ input[type="text"]::placeholder {
   fill: #81b3d2;
 }
 
+.switch a:hover {
+  stroke: #000000;
+  fill: #000000;
+
+}
+
+.switch a:focus {
+  stroke: #81b3d2;
+  fill: #81b3d2;
+}
+
+.social-button:hover {
+  background-color: #669ec0;
+}
+
+.social-button:focus {
+  background-color: #5496bd;
+}
+
 .button-blue:hover {
   background-color: #669ec0;
+  color: #88b6d1;
 }
 
 .button-blue:focus {
@@ -267,6 +280,17 @@ input[type="text"]::placeholder {
 .academy a{
    color: #000000;
    font-size: 14px;
+   margin-left: 3px;
+}
+
+.academy a:hover {
+  stroke: #81b3d2;
+  fill: #81b3d2;
+}
+
+.academy a:focus {
+  stroke: #c2c0c1;
+  fill: #c2c0c1;
 }
 
 .social-button {
@@ -386,6 +410,16 @@ input[type="radio"] {
 /*стили к сетке*/
 
 .wrapper {
+  position: relative;
+  min-height: 2762px;
+  background-color: #ffffff;
+  min-width: 768px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wrapper-info {
+  position: relative;
   background-color: #ffffff;
   min-width: 768px;
   max-width: 1200px;
@@ -442,14 +476,24 @@ input[type="radio"] {
 }
 
 .cite {
-  margin-top: 37px;
+  margin-top: 33px;
+  margin-left: 326px;
   width: 550px;
 }
 
 .hotel {
-  height: 256px;
+  /*height: 256px;*/
   display: flex;
-  margin-top: 28px;
+  margin-top: 31px;
+  margin-bottom: -6px;
+}
+
+.bridge {
+  margin-top: -10px;
+}
+
+.pic {
+  display: block;
 }
 
 .block {
@@ -459,12 +503,13 @@ input[type="radio"] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 48px;
+  padding: 50px 43px;
   text-align: center;
 }
 
 .block h2 {
   margin: 0;
+  margin-top: -5px;
 }
 
 .indention{
@@ -472,13 +517,13 @@ input[type="radio"] {
 }
 
 .indention-number{
-  margin-top: 22px;
+  margin-top: 25px;
   margin-bottom: 7px;
 }
 
 
 .features-list {
-
+  margin-top: -7px;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -488,10 +533,12 @@ input[type="radio"] {
 
 .feature-item {
   width: 33.3%;
-  background-color #c5f7db;
+  background-color: #c5f7db;
   display: flex;
   flex-direction: column;
-  padding: 40px 45px;
+  padding: 50px 45px;
+  padding-bottom: 65px;
+  margin-top: 5px;
   position: relative;
 }
 
@@ -507,21 +554,23 @@ input[type="radio"] {
 
 .feature-item svg {
   position: absolute;
-  top: 15.5%;
-  left: 40%;
+  top: 17.5%;
+  left: 42%;
 }
 
-.bottom {
+.bridge.bottom {
   display: flex;
   flex-wrap: wrap;
   max-width: 100%;
+  margin-top: -2px;
   height: 256px;
   margin:0;
   background-color: #eeeeee;
 }
 
 .bottom .feature-item {
-  padding: 40px 60px;
+
+  padding: 35px 60px;
 
 }
 .bottom .vantage {
@@ -550,28 +599,33 @@ input[type="radio"] {
 .heading {
   text-align: center;
   position: relative;
-  top: 28px;
+  top: 51px;
 }
 
 .interest p {
   text-align: center;
   margin: 0 auto;
-  margin-top: 35px;
+  margin-top: 52px;
 }
 
 .bottom p {
   position:relative;
-  top: 19px;
+  top: 20px;
+  margin-bottom: 7px;
+}
+
+.canyon {
+  margin-left: 6px;
 }
 
 .footer-index {
-  position: relative;
-  top: -389px;
-  min-height: 593px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .footer-inner {
-  min-height: 120px;
+  min-height: 125px;
   align-items: center;
   width: 100%;
   display: flex;
@@ -580,6 +634,7 @@ input[type="radio"] {
   position: absolute;
   left: 0;
   bottom: 0;
+
 }
 .visitsedona,
 .footer-social,
@@ -612,7 +667,7 @@ input[type="radio"] {
 
 .website{
   position: relative;
-  top: -12px;
+  top: 9px;
 }
 
 .welcome-container{
@@ -651,7 +706,7 @@ img.welcome-container-image-c{
 /*POPUP*/
 .search form {
   position: absolute;
-  display: none;
+  display: ;
   width: 100%;
   top: 86px;
   z-index: 40;
@@ -902,6 +957,10 @@ fieldset .button-blue {
   margin-left: 38px;
 }
 
+label[for="price"] {
+  color: #81b3d2;
+}
+
 .sorting {
   margin-left: 43px;
 }
@@ -982,7 +1041,7 @@ fieldset .button-blue {
   margin-left: -26px;
 }
 
-.footer-info .footer-inner{
+.footer-info .footer-inner {
   border-top: 1px solid #e5e5e5;
 }
 
@@ -994,3 +1053,5 @@ fieldset .button-blue {
 .footer-info .visitsedona {
   margin-left: 7px;
 }
+
+
