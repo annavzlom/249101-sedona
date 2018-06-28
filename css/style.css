@@ -8,9 +8,6 @@ body {
   color: #333333;
   text-transform: uppercase;
   background-color: #f2f2f2;
-
-
-  background-color: #7f8560;
 }
 
 *, *::before, *::after {
@@ -46,7 +43,7 @@ img {
   margin-bottom: 80px;
 }
 
-.welcome:after{
+.welcome:after {
   content: '';
   width: 100%;
   height: 57px;
@@ -76,7 +73,7 @@ a:focus {
 }
 
 
-.welcome:after{
+.welcome:after {
   content: '';
   width: 100%;
   height: 57px;
@@ -94,12 +91,6 @@ a:focus {
   height: 216px;
 }
 
-
-.infrast {
-  color: #ffffff;
-  font-size: 14px;
-}
-
 .range-tumbler {
   background-color: transparent;
   border: 2px solid #ffffff;
@@ -114,16 +105,17 @@ a:focus {
 .subject {
   font-size: 16px;
   font-weight: bold;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 12px;
 }
 
-.site-navigation {
-   list-style: none;
-}
 
 .site-navigation a {
   color: #000000;
   font-weight: bold;
 }
+
 
 .site-navigation a:hover {
   color: #81b3d2;
@@ -135,6 +127,7 @@ a:focus {
 
 .active a {
   color: #766357;
+  margin-left: 20px;
 }
 
 .option label {
@@ -142,12 +135,12 @@ a:focus {
   border-bottom: 1px dashed #81b3d2;
 }
 
-.style:hover + label{
+.style:hover + label {
   color: #81b3d2;
   border-bottom: none;
 }
 
-.style:checked + label{
+.style:checked + label {
   color: #000000;
   border-bottom: none;
 }
@@ -172,10 +165,6 @@ input[type="text"]::placeholder {
   color: #000000;
 }
 
-.search input[type="text"] {
-  background-color: #f2f2f2;
-}
-
 .search input[type="text"]:hover {
   background-color: #ebebeb;
 }
@@ -184,7 +173,6 @@ input[type="text"]::placeholder {
   background-color: #ffffff;
   outline: 2px solid #e5e5e5;
 }
-
 
 
 .main-caption,
@@ -206,11 +194,9 @@ input[type="text"]::placeholder {
 
 }
 
-.heading {
-  font-size: 30px;
-}
-
 .search button  {
+  padding: 31px 20px;
+  text-transform: uppercase;
   font-size: 21px;
   font-weight: bold;
   color: #ffffff;
@@ -242,7 +228,9 @@ input[type="text"]::placeholder {
   fill: #81b3d2;
 }
 
-.switch a:hover {
+
+
+/*.switch a:hover {
   stroke: #000000;
   fill: #000000;
 
@@ -251,7 +239,7 @@ input[type="text"]::placeholder {
 .switch a:focus {
   stroke: #81b3d2;
   fill: #81b3d2;
-}
+}*/
 
 .social-button:hover {
   background-color: #669ec0;
@@ -272,14 +260,7 @@ input[type="text"]::placeholder {
   outline: 0;
 }
 
-.search input{
-   background-color: #f2f2f2;
-   border: none;
-}
-
 .academy a{
-   color: #000000;
-   font-size: 14px;
    margin-left: 3px;
 }
 
@@ -291,10 +272,6 @@ input[type="text"]::placeholder {
 .academy a:focus {
   stroke: #c2c0c1;
   fill: #c2c0c1;
-}
-
-.social-button {
-   background-color: #81b3d2;
 }
 
 .key {
@@ -312,6 +289,7 @@ input[type="text"]::placeholder {
 
 .pin {
   background-color: #766357;
+   margin-left: 2px;
 }
 
 .pin:hover {
@@ -341,10 +319,6 @@ input[type="text"]::placeholder {
   color: #cacaca;
 }
 
-.pin {
-  background-color: #766357;
-}
-
 .hotels span {
   background-color: #f2f2f2;
   color: #666666;
@@ -354,6 +328,7 @@ input[type="text"]::placeholder {
 .search .plus {
   background-color: #f2f2f2;
   color: #a9a9a9;
+  padding: 10px 12px;
 }
 
 .search .minus:hover,
@@ -367,12 +342,31 @@ input[type="text"]::placeholder {
 }
 
 .search label {
-  color: #000000;
   font-weight: bold;
 }
 
-.footer-social li {
+a.footer-social li {
    list-style: none;
+}
+
+a.academy-link:hover path {
+  fill: #81b3d2;
+}
+
+.academy-link:focus path {
+  fill: #c2c0c1;
+}
+
+a.indicator:hover path {
+  fill: #000000;
+}
+
+a.indicator:focus path {
+  fill: #81b3d2;
+}
+
+a.social-button:focus path {
+  fill: #88b6d1;
 }
 
 input[type="radio"] {
@@ -407,8 +401,6 @@ input[type="radio"] {
   color: #ffffff;
 }
 
-/*стили к сетке*/
-
 .wrapper {
   position: relative;
   min-height: 2762px;
@@ -434,13 +426,18 @@ input[type="radio"] {
   margin: 0;
   padding: 0;
   margin-top: 0;
-
+  list-style: none;
 }
+
 .site-navigation li {
   width: 20%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.index-hotel {
+  margin-left: 17px;
 }
 
 .site-navigation li:nth-of-type(3) {
@@ -457,12 +454,10 @@ input[type="radio"] {
   z-index: 10;
 }
 
-
- .welcome {
+.welcome {
   display: flex;
   height: 508px;
   position: relative;
-
 }
 
 .main-caption,
@@ -472,7 +467,7 @@ input[type="radio"] {
   margin-right: auto;
   text-align: center;
   position: relative;
-  top: -21px;
+  bottom: 21px;
 }
 
 .cite {
@@ -482,14 +477,12 @@ input[type="radio"] {
 }
 
 .hotel {
-  /*height: 256px;*/
   display: flex;
   margin-top: 31px;
-  margin-bottom: -6px;
 }
 
 .bridge {
-  margin-top: -10px;
+  margin-top: 2px;
 }
 
 .pic {
@@ -503,27 +496,27 @@ input[type="radio"] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 43px;
+  padding: 45px 43px;
   text-align: center;
 }
 
 .block h2 {
   margin: 0;
-  margin-top: -5px;
+
 }
 
-.indention{
+.indention {
   margin: 15px 0;
 }
 
-.indention-number{
+.indention-number {
   margin-top: 25px;
   margin-bottom: 7px;
 }
 
-
 .features-list {
-  margin-top: -7px;
+  margin-top: 0;
+  margin-bottom: 0;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -533,12 +526,11 @@ input[type="radio"] {
 
 .feature-item {
   width: 33.3%;
-  background-color: #c5f7db;
   display: flex;
   flex-direction: column;
   padding: 50px 45px;
   padding-bottom: 65px;
-  margin-top: 5px;
+  margin-top: 2px;
   position: relative;
 }
 
@@ -555,7 +547,7 @@ input[type="radio"] {
 .feature-item svg {
   position: absolute;
   top: 17.5%;
-  left: 42%;
+  left: 41%;
 }
 
 .bridge.bottom {
@@ -574,7 +566,7 @@ input[type="radio"] {
 
 }
 .bottom .vantage {
-  margin-top: 8px;
+  margin-top: 11px;
 }
 
 .bottom-number {
@@ -593,35 +585,32 @@ input[type="radio"] {
 .interest {
   display: flex;
   flex-direction: column;
-  height: 290px;
+  padding-bottom: 45px;
 }
 
 .heading {
   text-align: center;
   position: relative;
-  top: 51px;
+  top: 62px;
+  font-size: 30px;
 }
 
 .interest p {
   text-align: center;
   margin: 0 auto;
-  margin-top: 52px;
+  margin-top: 65px;
+  line-height: 24px;
 }
 
 .bottom p {
   position:relative;
   top: 20px;
+  right: 3px;
   margin-bottom: 7px;
 }
 
 .canyon {
   margin-left: 6px;
-}
-
-.footer-index {
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 
 .footer-inner {
@@ -634,22 +623,23 @@ input[type="radio"] {
   position: absolute;
   left: 0;
   bottom: 0;
-
 }
+
 .visitsedona,
 .footer-social,
 .academy {
   display: flex;
   width: 33%;
-  margin-top: 10px ;
+  margin-top: 12px;
   justify-content: center;
+  margin-left: 3px;
 
 }
 
 .footer-social {
   display: flex;
   justify-content: center;
-  margin-left: 7px;
+  margin-left: 2px;
 
 }
 
@@ -658,52 +648,51 @@ input[type="radio"] {
   height: 47px;
   margin-left: 5px;
   margin-top: -15px;
+  background-color: #81b3d2;
 }
 
 .academy {
   margin-left: 10px;
-
 }
 
-.website{
+.website {
   position: relative;
-  top: 9px;
+  top: 13px;
+  left: -5px;
+  color: #000000;
 }
 
-.welcome-container{
+.welcome-container {
   width: 100%;
   padding-top: 78px;
 }
 
-.welcome-container img{
+.welcome-container img {
   display: block;
   margin: 0px auto;
 }
 
-img.welcome-container-image-g{
+img.welcome-container-image-g {
   margin-top: 9px;
 }
 
-img.welcome-container-image-s{
+img.welcome-container-image-s {
   margin-top: 54px;
 }
 
-img.welcome-container-image-c{
+img.welcome-container-image-c {
   margin-top: 55px;
 }
-
+/*POPUP*/
 .search{
   display: flex;
   flex-direction: column;
   align-content: center;
   position: relative;
   width: 570px;
-  height: 480px;
   margin: 0 auto;
-  margin-top: -82px;
 }
 
-/*POPUP*/
 .search form {
   position: absolute;
   display: ;
@@ -713,39 +702,42 @@ img.welcome-container-image-c{
   background-color: #ffffff;
 }
 
-.quest {
-  padding: 33px 20px;
-  vertical-align: center;
-  text-transform: uppercase;
-}
-
 .popup-content {
   border: none;
+  padding: 40px 49px;
 }
 
 .popup-content p {
   display: flex;
-  margin-top: 51px;
-  margin-left: 17px;
   align-items: center;
-  justify-content: center;
 }
 
 .popup-content p:nth-of-type(2) {
   margin-top: 27px;
 }
-.popup-content input{
-   width: 340px;
+
+.popup-content input {
+   width: 346px;
    text-transform: uppercase;
    font-weight: bold;
-   padding: 12px 10px;
-   margin-left: 24px;
+   padding: 12px 11px;
+   margin-left: 22px;
+   background-color: #f2f2f2;
+   border: none;
+}
+
+input[id="arriv"] {
+  margin-left: 25px;
+}
+
+.popup-label{
+   margin-left: 5px;
 }
 
 .popup-content svg {
   position: relative;
   top: 3px;
-  right: 27px;
+  right: 32px;
   z-index: 10;
 }
 
@@ -754,6 +746,13 @@ img.welcome-container-image-c{
   justify-content: space-between;
   margin-top: 27px;
 }
+
+.plusminus {
+  display: flex;
+  margin-left: 3px;
+  margin-top: -3px;
+}
+
 .fill input {
   width: 40px;
   margin-left: 0;
@@ -764,44 +763,49 @@ img.welcome-container-image-c{
 .children {
   margin-right: 47px;
 }
+
 .plus,
 .minus {
   padding: 7px 12px;
-
 }
 
 .adult,
 .children {
   display:flex;
 }
+
 .adult {
-  margin-left: 90px;
-}
-.adult label {
-  position: relative;
-  left: -39px;
-  margin-left: -5px;
-  top: 12px;
+  margin-top: 3px;
+  margin-left: 4px;
+  margin-right: 8px;
 }
 
-.children label{
-  margin-right: 28px;
+.adult label {
+  position: relative;
+  margin-right: 39px;
+  top: 9px;
+}
+
+.children label {
+  margin-right: 33px;
+  margin-left: 42px;
   margin-top: 12px;
 }
+
 fieldset .button-blue {
   display: flex;
   width: 460px;
   justify-content: center;
-  margin-left: 40px;
-  margin-top: 50px;
+  margin: 50px 0;
+  margin-left: 2px;
+  margin-bottom: 15px;
   padding: 17px 10px;
   text-transform: uppercase;
   background-color: #81b3d2;
 }
 
 /*info html style*/
-
-.filter form{
+.filter form {
   display: flex;
   width: 100%;
 }
@@ -821,46 +825,59 @@ fieldset .button-blue {
   width: 20%;
 }
 
-.subject {
-  margin-top: 19px;
-  margin-bottom: 0;
+.subject-block  {
+  margin-bottom: 6px;
 }
 
-.subject-block {
-  margin: 0;
-  margin-top: 20px;
-  margin-bottom: 3px;
+.custom-checkbox + label {
+  display: flex;
+  color: #ffffff;
 }
 
-.infrast-block span {
-  margin-left: 11px;
+.apart {
+  margin-top: 4px;
+}
+
+.custom-checkbox + label:before {
+  content: '';
+  width: 27px;
+  height: 23px;
+  background: url(../img/checkbox-off.svg) 0 0 no-repeat;
+  margin-right: 14px;
+}
+
+.custom-checkbox:checked + label:before {
+  width: 27px;
+  background: url(../img/checkbox-on.svg)
 }
 
 .infrast-block .parking-wifi {
   margin-left: 14px;
 }
+
  .wifi {
   margin-top: 2px;
 }
-
-
-
 
 .lodging {
    padding-right: 40px;
    margin-left: 15px;
 }
-
-
 /*От до*/
 .slider {
   margin-left: 20.3%;
   width: 36.7%;
 }
 
+.slider p {
+  margin-left: 2px;
+}
+
 .block-of-before {
   display: flex;
   width: 315px;
+  margin-top: -13px;
+  margin-left: 3px;
 }
 
 .of-before {
@@ -878,21 +895,23 @@ fieldset .button-blue {
   top: 5px;
 }
 
-
 .range {
   position: relative;
   margin-top: 19px;
 }
+
 .range-gray {
   width: 100%;
   height: 2px;
   background-color: #918381;
 }
+
 .range-c1 {
   width: 80%;
   height: 2px;
   background-color: #ffffff;
 }
+
 .range-tumbler {
   position: absolute;
   top: 50%;
@@ -906,6 +925,7 @@ fieldset .button-blue {
   font-size:0;
   background-color: #ffffff;
 }
+
 .range-tumbler-min {
   left: 80%;
 }
@@ -931,16 +951,16 @@ fieldset .button-blue {
   text-transform: uppercase;
 }
 
-
 .found {
   display: flex;
   width: 100%;
-  padding: 33px 0;
+  padding: 28px 0;
 }
 
 .option {
   width: 50%;
-  margin-left: 72px;
+  margin-left: 73px;
+  margin-top: 5px;
 }
 
 .option .found-three {
@@ -950,7 +970,6 @@ fieldset .button-blue {
 .option span,
 .option label {
   font-size: 12px;
-  
 }
 
 .option label {
@@ -961,39 +980,50 @@ label[for="price"] {
   color: #81b3d2;
 }
 
+label[for="type"] {
+  margin-left: 28px;
+  margin-right: -9px;
+}
+
 .sorting {
   margin-left: 43px;
 }
 .switch {
   width: 5%;
   margin-left: 35.2%;
+  margin-top: 7px;
 }
-.switch svg:nth-of-type(2) {
-  margin-left: 7px;
-  margin-top: 8px;
+
+.switch a:nth-of-type(2) {
+  margin-left: 8px;
 }
 
 .gallery {
    width: 100%;
+   margin-top: 5px;
 }
 
 .hotels-border {
   border-top: 1px solid #e5e5e5;
 }
+
 .hotels {
   display: flex;
-  padding-top: 26px;
-  padding-bottom: 27px;
-  padding-left: 73px;
+  padding: 26px 70px 27px 73px;
+}
+
+.picture img {
+  width: 135px;
+  flex-shrink:0;
+  margin-right: 28px;
 }
 
 .relation {
- margin-left: 2.8%;
- margin-top: -4px;
+  flex-grow: 1;
 }
 
 .relation p {
-  margin-top: 9px;
+  margin-top: 6px;
   margin-bottom: 17px;
 }
 
@@ -1011,7 +1041,8 @@ label[for="price"] {
 }
 
 .poco-diablo {
-  margin-top: 3px;
+  margin-top: 2px;
+  margin-left: 2px;
 }
 
 .key,
@@ -1022,7 +1053,11 @@ label[for="price"] {
 }
 
 .rating {
-  margin-left: 48.5%;
+  width: 150px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .rating .desert {
@@ -1036,9 +1071,15 @@ label[for="price"] {
 .star {
   margin-bottom: 45px;
 }
+
+.star svg {
+  margin-left: 2px;
+  margin-bottom: -3px;
+}
+
 .rating span {
-  padding: 3px 17px;
-  margin-left: -26px;
+  padding: 3px 14px;
+
 }
 
 .footer-info .footer-inner {
@@ -1050,8 +1091,17 @@ label[for="price"] {
   position: relative;
 }
 
-.footer-info .visitsedona {
-  margin-left: 7px;
+.footer-info .visitsedona,
+.footer-info .footer-social {
+  margin-left: 5px;
+  margin-top: 17px;
 }
 
+.footer-info .academy {
+  margin-top: 20px;
+}
 
+.footer-info .website {
+  position: relative;
+  top: -16px;
+}
