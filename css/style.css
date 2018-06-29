@@ -456,29 +456,26 @@ input[type="radio"] {
 
 .welcome {
   display: flex;
-  height: 508px;
+  min-height: 508px;
   position: relative;
+  margin-bottom: 61px;
 }
 
 .main-caption,
 .cite {
   width: 500px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   text-align: center;
-  position: relative;
-  bottom: 21px;
 }
 
 .cite {
-  margin-top: 33px;
-  margin-left: 326px;
+  margin-top: 30px;
   width: 550px;
 }
 
 .hotel {
   display: flex;
-  margin-top: 31px;
+  margin-top: 53px;
 }
 
 .bridge {
@@ -521,7 +518,7 @@ input[type="radio"] {
   flex-wrap: wrap;
   width: 100%;
   padding-left:0;
-  background-color: #ffffff;
+  background-color: #eeeeee;
 }
 
 .feature-item {
@@ -550,7 +547,7 @@ input[type="radio"] {
   left: 41%;
 }
 
-.bridge.bottom {
+.bottom {
   display: flex;
   flex-wrap: wrap;
   max-width: 100%;
@@ -561,9 +558,7 @@ input[type="radio"] {
 }
 
 .bottom .feature-item {
-
   padding: 35px 60px;
-
 }
 .bottom .vantage {
   margin-top: 11px;
@@ -590,23 +585,19 @@ input[type="radio"] {
 
 .heading {
   text-align: center;
-  position: relative;
-  top: 62px;
+  margin-top: 56px;
   font-size: 30px;
 }
 
 .interest p {
   text-align: center;
   margin: 0 auto;
-  margin-top: 65px;
+  margin-top: 3px;
   line-height: 24px;
 }
 
 .bottom p {
-  position:relative;
-  top: 20px;
-  right: 3px;
-  margin-bottom: 7px;
+  margin-top: 14px;
 }
 
 .canyon {
@@ -797,7 +788,7 @@ fieldset .button-blue {
   width: 460px;
   justify-content: center;
   margin: 50px 0;
-  margin-left: 2px;
+  margin-left: 5px;
   margin-bottom: 15px;
   padding: 17px 10px;
   text-transform: uppercase;
@@ -1080,6 +1071,10 @@ label[for="type"] {
 .rating span {
   padding: 3px 14px;
 
+}
+
+.footer-index {
+  min-height: 593px;
 }
 
 .footer-info .footer-inner {
