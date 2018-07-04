@@ -222,12 +222,10 @@ a.calendar:focus path {
 }
 
 .academy a:hover {
-  stroke: #81b3d2;
   fill: #81b3d2;
 }
 
 .academy a:focus {
-  stroke: #c2c0c1;
   fill: #c2c0c1;
 }
 
