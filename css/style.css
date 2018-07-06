@@ -15,7 +15,7 @@ body {
 }
 
 html {
- box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
@@ -39,6 +39,7 @@ a:focus {
 
 .welcome {
   background-image: url("../img/header-bg.jpg");
+  background-color: #b6c7d9;
   margin-bottom: 80px;
   background-position: center -60px;
   position: relative;
@@ -72,7 +73,7 @@ a:focus {
   border: 2px solid #ffffff;
   color: #ffffff;
   padding: 8px 34px;
-  margin-right: 8px;
+  margin-right: 10px;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -83,19 +84,20 @@ a:focus {
   font-weight: bold;
   color: #ffffff;
   margin-top: 20px;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
 }
 
 .site-navigation a {
   color: #000000;
   font-weight: bold;
+  line-height: 26px;
 }
 
 .site-navigation a:hover {
   color: #81b3d2;
 }
 
-.site-navigation a:focus {
+.site-navigation a:active {
   color: #cacaca;
 }
 
@@ -120,11 +122,11 @@ a:focus {
 }
 
 input[type="text"]::-moz-placeholder {
-    color: #000000;
+  color: #000000;
 }
 
 input[type="text"]::-webkit-input-placeholder {
-    color: #000000;
+  color: #000000;
 }
 
 input[type="text"]:-ms-input-placeholder {
@@ -157,18 +159,20 @@ input[type="text"]::placeholder {
   font-weight: bold;
 }
 
+.visitsedona {
+  color: #000000;
+  margin-top: 10px;
+}
+
 .main-caption {
   line-height: 26px;
 }
 
-.feature-item {
-  list-style: none;
-}
-
-.search button  {
+.quest  {
   padding: 31px 20px;
   text-transform: uppercase;
   font-size: 21px;
+  line-height: 26px;
   font-weight: bold;
   color: #ffffff;
   background-color: #766357;
@@ -184,17 +188,17 @@ input[type="text"]::placeholder {
   background-color: #604e43;
 }
 
-.quest:focus {
+.quest:active {
   background-color: #503e33;
   color: #766860;
   outline: 0;
 }
 
-a.calendar:hover path {
+.calendar:hover path {
   fill: #000000;
 }
 
-a.calendar:focus path {
+.calendar:active path {
   fill: #81b3d2;
 }
 
@@ -202,7 +206,7 @@ a.calendar:focus path {
   background-color: #669ec0;
 }
 
-.social-button:focus {
+.social-button:active {
   background-color: #5496bd;
 }
 
@@ -211,7 +215,7 @@ a.calendar:focus path {
   color: #88b6d1;
 }
 
-.button-blue:focus {
+.button-blue:active {
   background-color: #5496bd;
   color: #7aadcb;
   outline: 0;
@@ -225,7 +229,7 @@ a.calendar:focus path {
   fill: #81b3d2;
 }
 
-.academy a:focus {
+.academy a:active {
   fill: #c2c0c1;
 }
 
@@ -237,21 +241,21 @@ a.calendar:focus path {
   background-color: #669ec0;
 }
 
-.key:focus {
+.key:active {
   background-color: #5496bd;
   color: #88b6d1;
 }
 
 .pin {
   background-color: #766357;
-   margin-left: 2px;
+  margin-left: 2px;
 }
 
 .pin:hover {
   background-color: #604e43;
 }
 
-.pin:focus {
+.pin:active {
   background-color: #503e33;
   color: #857871;
 }
@@ -264,13 +268,14 @@ a.calendar:focus path {
   color: #000000;
   font-weight: bold;
   font-size: 21px;
+  line-height: 26px;
 }
 
 .places:hover {
   color:#81b3d2;
 }
 
-.places:focus {
+.places:active {
   color: #cacaca;
 }
 
@@ -281,9 +286,10 @@ a.calendar:focus path {
 
 .search .minus,
 .search .plus {
+  border: none;
   background-color: #f2f2f2;
   color: #a9a9a9;
-  padding: 10px 12px;
+  padding: 7px 13px;
 }
 
 .search .minus:hover,
@@ -291,8 +297,8 @@ a.calendar:focus path {
   color: #000000;
 }
 
-.search .minus:focus,
-.search .plus:focus {
+.search .minus:active,
+.search .plus:active {
   color: #81b3d2;
 }
 
@@ -301,14 +307,14 @@ a.calendar:focus path {
 }
 
 a.footer-social li {
-   list-style: none;
+  list-style: none;
 }
 
 a.academy-link:hover path {
   fill: #81b3d2;
 }
 
-.academy-link:focus path {
+.academy-link:active path {
   fill: #c2c0c1;
 }
 
@@ -316,11 +322,11 @@ a.indicator:hover path {
   fill: #000000;
 }
 
-a.indicator:focus path {
+a.indicator:active path {
   fill: #81b3d2;
 }
 
-a.social-button:focus path {
+a.social-button:active path {
   fill: #88b6d1;
 }
 
@@ -336,12 +342,15 @@ input[type="radio"] {
   margin: -1px;
 }
 
-.filter input[type="text"]::-moz-placeholder {
-    color: #ffffff;
+.filter .of-before {
+ -moz-color: #ffffff;
+ -webkit-color: #ffffff;
+ -ms-color: #ffffff;
+ color: #ffffff;
 }
 
-.filter input[type="text"]::-webkit-input-placeholder {
-    color: #ffffff;
+/*.filter input[type="text"]::-webkit-input-placeholder {
+  color: #ffffff;
 }
 
 .filter input[type="text"]:-ms-input-placeholder {
@@ -354,7 +363,7 @@ input[type="radio"] {
 
 .filter input[type="text"]::placeholder {
   color: #ffffff;
-}
+}*/
 
 .wrapper {
   position: relative;
@@ -413,7 +422,7 @@ input[type="radio"] {
   display: flex;
   min-height: 508px;
   position: relative;
-  margin-bottom: 61px;
+  margin-bottom: 59px;
 }
 
 .main-caption,
@@ -426,15 +435,16 @@ input[type="radio"] {
 .cite {
   margin-top: 30px;
   width: 550px;
+  line-height: 26px;
 }
 
 .hotel {
   display: flex;
-  margin-top: 53px;
+  margin-top: 51px;
 }
 
 .bridge {
-  margin-top: 2px;
+  margin-top: 3px;
 }
 
 .pic {
@@ -454,10 +464,12 @@ input[type="radio"] {
 
 .block h2 {
   margin: 0;
+  padding: 0 50px;
 }
 
 .indention {
   margin: 15px 0;
+  padding: 0 5px;
 }
 
 .indention-number {
@@ -483,22 +495,30 @@ input[type="radio"] {
   padding-bottom: 65px;
   margin-top: 2px;
   position: relative;
+  list-style: none;
 }
 
 .feature-item p,
 .vantage {
   text-align: center;
+  padding: 0 10px;
 }
 
 .vantage {
  margin-top: 108px;
  margin-bottom: 10px;
+ color: #000000;
 }
 
 .feature-item svg {
   position: absolute;
   top: 17.5%;
   left: 41%;
+}
+
+.feature-item .souvenirs {
+  left: 42.2%;
+  top: 17%;
 }
 
 .bottom {
@@ -517,6 +537,7 @@ input[type="radio"] {
 
 .bottom .vantage {
   margin-top: 11px;
+  padding: 0 81px;
 }
 
 .bottom-number {
@@ -536,24 +557,30 @@ input[type="radio"] {
 .interest {
   display: flex;
   flex-direction: column;
-  padding-bottom: 45px;
+  padding-bottom: 46px;
 }
 
 .heading {
   text-align: center;
-  margin-top: 56px;
+  margin-top: 52px;
+  margin-bottom: 23px;
   font-size: 30px;
+  line-height: 36px;
+  color: #000000;
 }
 
 .interest p {
   text-align: center;
   margin: 0 auto;
-  margin-top: 3px;
   line-height: 24px;
 }
 
 .bottom p {
-  margin-top: 14px;
+  margin-top: 15px;
+}
+
+.bottom .go-to-sedona {
+  padding: 0;
 }
 
 .canyon {
@@ -575,25 +602,30 @@ input[type="radio"] {
 .visitsedona,
 .footer-social,
 .academy {
-  display: flex;
   width: 33%;
-  margin-top: 12px;
-  justify-content: center;
-  margin-left: 3px;
+  text-align: center;
 }
 
 .footer-social {
   display: flex;
   justify-content: center;
-  margin-left: 2px;
+  margin-left: 3px;
+  margin-bottom: 7px;
 }
 
 .social-button {
   padding: 15px;
   height: 47px;
   margin-left: 5px;
-  margin-top: -15px;
   background-color: #81b3d2;
+}
+
+.facebook {
+  padding: 12px 18px;
+}
+
+.youtube {
+  padding: 16px 13px;
 }
 
 .academy {
@@ -602,9 +634,10 @@ input[type="radio"] {
 
 .website {
   position: relative;
-  top: 13px;
-  left: -5px;
+  top: -15px;
+  left: -3px;
   color: #000000;
+  line-height: 26px;
 }
 
 .welcome-container {
@@ -636,7 +669,7 @@ img.welcome-container-image-c {
   flex-direction: column;
   align-content: center;
   position: relative;
-  width: 570px;
+  width: 569px;
   margin: 0 auto;
 }
 
@@ -650,7 +683,7 @@ img.welcome-container-image-c {
 
 .popup-content {
   border: none;
-  padding: 40px 49px;
+  padding: 41px 49px;
 }
 
 .popup-content p {
@@ -663,50 +696,60 @@ img.welcome-container-image-c {
 }
 
 .popup-content input {
-   width: 346px;
-   text-transform: uppercase;
-   font-weight: bold;
-   padding: 12px 11px;
-   margin-left: 22px;
-   background-color: #f2f2f2;
-   border: none;
+  width: 346px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 26px;
+  padding: 7px 11px;
+  margin-left: 21px;
+  background-color: #f2f2f2;
+  border: none;
 }
 
 .popup-content .arrival-date {
-  margin-left: 26px;
+  margin-left: 24px;
+}
+
+.calendar {
+  position: relative;
+  outline: none;
+  right: 38px;
+  bottom: 9px;
+  border: none;
+  background-color: #f2f2f2;
 }
 
 .popup-label {
-   margin-left: 5px;
+  margin-left: 6px;
+  margin-top: 4px;
+  line-height: 26px;
+  color: #000000;
 }
 
 .popup-content svg {
-  position: relative;
-  top: 3px;
-  right: 32px;
+  position: absolute;
   z-index: 10;
 }
 
 .fill {
   display: flex;
   justify-content: space-between;
-  margin-top: 27px;
+  margin-top: 26px;
 }
 
 .plusminus {
   display: flex;
   margin-left: 3px;
-  margin-top: -3px;
 }
 
 .fill input {
   width: 40px;
   margin-left: 0;
-  padding: 14px 0;
   text-align: center
 }
 
 .children {
+  margin-top: 3px;
   margin-right: 47px;
 }
 
@@ -718,28 +761,36 @@ img.welcome-container-image-c {
 .adult {
   margin-top: 3px;
   margin-left: 4px;
-  margin-right: 8px;
+  margin-right: 20px;
 }
 
 .adult label {
   position: relative;
   margin-right: 39px;
-  top: 9px;
+  top: 11px;
 }
 
 .children label {
-  margin-right: 33px;
-  margin-left: 42px;
-  margin-top: 12px;
+  margin-right: 29px;
+  margin-left: 40px;
+  margin-top: 11px;
+}
+
+.children input {
+  padding-left: 5px;
 }
 
 fieldset .button-blue {
   display: flex;
   width: 460px;
   justify-content: center;
-  margin: 50px 0;
-  margin-left: 5px;
-  margin-bottom: 15px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 21px;
+  border: none;
+  margin: 55px 0;
+  margin-left: 4px;
+  margin-bottom: 14px;
   padding: 17px 10px;
   text-transform: uppercase;
   background-color: #81b3d2;
@@ -758,8 +809,7 @@ fieldset .button-blue {
 }
 
 .infrast-block {
-  display: flex;
-  flex-direction: column;
+  display: block;
   padding: 0 62px;
   margin-left: 10px;
   margin-top: -12px;
@@ -767,7 +817,7 @@ fieldset .button-blue {
 }
 
 .subject-block  {
-  margin-bottom: 6px;
+  margin-bottom: 23px;
 }
 
 .custom-checkbox + label {
@@ -793,6 +843,10 @@ fieldset .button-blue {
   background: url("../img/checkbox-on.svg")
 }
 
+.custom-checkbox + label:disabled {
+  background: url("../img/checkbox-disabled.svg");
+}
+
 .infrast-block .parking-wifi {
   margin-left: 14px;
 }
@@ -802,8 +856,8 @@ fieldset .button-blue {
 }
 
 .lodging {
-   padding-right: 40px;
-   margin-left: 15px;
+  padding-right: 40px;
+  margin-left: 15px;
 }
 
 .slider {
@@ -819,8 +873,7 @@ fieldset .button-blue {
   position: relative;
   display: flex;
   width: 315px;
-  margin-top: -13px;
-  margin-left: 3px;
+  margin-top: -26px;
 }
 
 .block-of-before:after {
@@ -839,7 +892,9 @@ fieldset .button-blue {
   text-transform: uppercase;
   margin-top: 12px;
   text-align: center;
-  padding: 8px 0;
+  color: #ffffff;
+  line-height: 21px;
+  padding: 5px 0;
   background-color: transparent;
   border: 2px solid #ffffff;
 }
@@ -859,7 +914,7 @@ fieldset .button-blue {
 
 .range {
   position: relative;
-  margin-top: 19px;
+  margin-top: 20px;
 }
 
 .range-gray {
@@ -872,6 +927,12 @@ fieldset .button-blue {
   width: 80%;
   height: 2px;
   background-color: #ffffff;
+}
+
+.tumbler-wrap {
+  overflow:hidden;
+  width: 21px;
+  height: 21px;
 }
 
 .range-tumbler {
@@ -887,6 +948,17 @@ fieldset .button-blue {
   font-size:0;
   background-color: #ffffff;
   cursor: pointer;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+.range-tumbler:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .range-tumbler-min {
@@ -912,7 +984,7 @@ fieldset .button-blue {
 .found {
   display: flex;
   width: 100%;
-  padding: 28px 0;
+  padding: 25px 0;
 }
 
 .option {
@@ -923,6 +995,8 @@ fieldset .button-blue {
 
 .option .found-three {
   font-size: 21px;
+  line-height: 26px;
+  color: #000000;
 }
 
 .option span,
@@ -931,7 +1005,8 @@ fieldset .button-blue {
 }
 
 .option label {
-  margin-left: 38px;
+  margin-left: 36px;
+  line-height: 18px;
 }
 
 label[for="price"] {
@@ -940,17 +1015,19 @@ label[for="price"] {
 
 label[for="type"] {
   margin-left: 28px;
-  margin-right: -9px;
+  margin-right: -5px;
 }
 
 .sorting {
-  margin-left: 43px;
+  margin-left: 41px;
+  line-height: 18px;
+  color: #000000;
 }
 
 .switch {
   width: 5%;
-  margin-left: 35.2%;
-  margin-top: 7px;
+  margin-left: 34.8%;
+  margin-top: 10px;
 }
 
 .switch a:nth-of-type(2) {
@@ -958,8 +1035,8 @@ label[for="type"] {
 }
 
 .gallery {
-   width: 100%;
-   margin-top: 5px;
+  width: 100%;
+  margin-top: 5px;
 }
 
 .hotels-border {
@@ -974,7 +1051,8 @@ label[for="type"] {
 .picture img {
   width: 135px;
   flex-shrink:0;
-  margin-right: 28px;
+  margin-right: 29px;
+  margin-top: 3px;
 }
 
 .relation {
@@ -982,8 +1060,8 @@ label[for="type"] {
 }
 
 .relation p {
-  margin-top: 6px;
-  margin-bottom: 17px;
+  margin-top: 5px;
+  margin-bottom: 18px;
 }
 
 .relation span {
@@ -1000,8 +1078,7 @@ label[for="type"] {
 }
 
 .poco-diablo {
-  margin-top: 2px;
-  margin-left: 2px;
+  margin-top: -3px;
 }
 
 .key,
@@ -1053,10 +1130,13 @@ label[for="type"] {
   position: relative;
 }
 
-.footer-info .visitsedona,
 .footer-info .footer-social {
-  margin-left: 5px;
-  margin-top: 17px;
+  margin-left: 2px;
+  margin-top: 6px;
+}
+
+.footer-info .visitsedona {
+  margin-top: 15px;
 }
 
 .footer-info .academy {
@@ -1066,4 +1146,5 @@ label[for="type"] {
 .footer-info .website {
   position: relative;
   top: -16px;
+  left: -5px;
 }
