@@ -121,31 +121,31 @@ a:focus {
   border-bottom: none;
 }
 
-input[type="text"]::-moz-placeholder {
+.search input::-moz-placeholder {
   color: #000000;
 }
 
-input[type="text"]::-webkit-input-placeholder {
+.search input::-webkit-input-placeholder {
   color: #000000;
 }
 
-input[type="text"]:-ms-input-placeholder {
+.search input:-ms-input-placeholder {
   color: #000000;
 }
 
-input[type="text"]::-ms-input-placeholder {
+.search input[type="text"]::-ms-input-placeholder {
   color: #000000;
 }
 
-input[type="text"]::placeholder {
+.search input::placeholder {
   color: #000000;
 }
 
-.search input[type="text"]:hover {
+.search input:hover {
   background-color: #ebebeb;
 }
 
-.search input[type="text"]:focus {
+.search input:focus {
   background-color: #ffffff;
   outline: 2px solid #e5e5e5;
 }
@@ -444,7 +444,7 @@ input[type="radio"] {
 }
 
 .bridge {
-  margin-top: 3px;
+  margin-top: 0;
 }
 
 .pic {
@@ -484,6 +484,7 @@ input[type="radio"] {
   flex-wrap: wrap;
   width: 100%;
   padding-left:0;
+  padding-bottom: 5px;
   background-color: #eeeeee;
 }
 
@@ -526,7 +527,7 @@ input[type="radio"] {
   flex-wrap: wrap;
   max-width: 100%;
   margin-top: -2px;
-  height: 256px;
+  min-height: 256px;
   margin:0;
   background-color: #eeeeee;
 }
@@ -616,6 +617,7 @@ input[type="radio"] {
 .social-button {
   padding: 15px;
   height: 47px;
+  width: 47px;
   margin-left: 5px;
   background-color: #81b3d2;
 }
@@ -683,7 +685,10 @@ img.welcome-container-image-c {
 
 .popup-content {
   border: none;
-  padding: 41px 49px;
+  padding: 41px 0;
+  /*padding-left: 57px;*/
+  margin: 0;
+  min-width: auto;
 }
 
 .popup-content p {
@@ -696,38 +701,40 @@ img.welcome-container-image-c {
 }
 
 .popup-content input {
-  width: 346px;
+  /*width: 346px;*/
   text-transform: uppercase;
   font-weight: bold;
   line-height: 26px;
   padding: 7px 11px;
+  padding-left: 20px;
+  padding-right: 109px;
   margin-left: 21px;
   background-color: #f2f2f2;
   border: none;
 }
 
 .popup-content .arrival-date {
-  margin-left: 24px;
+  margin-left: 28px;
 }
 
 .calendar {
-  position: relative;
+  position: absolute;
   outline: none;
-  right: 38px;
-  bottom: 9px;
+  right: 58px;
+  margin-top: 2px;
   border: none;
   background-color: #f2f2f2;
 }
 
 .popup-label {
-  margin-left: 6px;
-  margin-top: 4px;
   line-height: 26px;
+  padding-left: 40px;
+  /*padding: 0 40px;*/
   color: #000000;
 }
 
 .popup-content svg {
-  position: absolute;
+  position: relative;
   z-index: 10;
 }
 
@@ -735,6 +742,7 @@ img.welcome-container-image-c {
   display: flex;
   justify-content: space-between;
   margin-top: 26px;
+  padding: 0 30px;
 }
 
 .plusminus {
@@ -743,14 +751,15 @@ img.welcome-container-image-c {
 }
 
 .fill input {
-  width: 40px;
+  width: 20px;
+  padding: 0;
   margin-left: 0;
   text-align: center
 }
 
 .children {
   margin-top: 3px;
-  margin-right: 47px;
+  margin-right: 52px;
 }
 
 .adult,
@@ -760,27 +769,25 @@ img.welcome-container-image-c {
 
 .adult {
   margin-top: 3px;
-  margin-left: 4px;
   margin-right: 20px;
 }
 
 .adult label {
   position: relative;
-  margin-right: 39px;
-  top: 11px;
+  padding-right: 67px;
+  top: 9px;
 }
 
 .children label {
   margin-right: 29px;
-  margin-left: 40px;
-  margin-top: 11px;
+  margin-top: 9px;
 }
 
 .children input {
   padding-left: 5px;
 }
 
-fieldset .button-blue {
+.button-blue {
   display: flex;
   width: 460px;
   justify-content: center;
@@ -788,8 +795,8 @@ fieldset .button-blue {
   font-weight: bold;
   font-size: 21px;
   border: none;
-  margin: 55px 0;
-  margin-left: 4px;
+  margin: 52px 0;
+  margin-left: -2px;
   margin-bottom: 14px;
   padding: 17px 10px;
   text-transform: uppercase;
@@ -865,25 +872,35 @@ fieldset .button-blue {
   width: 36.7%;
 }
 
-.slider p {
-  margin-left: 2px;
-}
-
 .block-of-before {
   position: relative;
   display: flex;
   width: 315px;
-  margin-top: -26px;
+  margin-top: -41px;
 }
 
 .block-of-before:after {
   content: "";
   position: absolute;
-  right: 157px;
-  top: 18px;
+  right: 155px;
+  top: 34px;
   height: 22px;
   border: 1px solid #ffffff;
   background-color: #ffffff;
+}
+
+.block-of-before label{
+  position: absolute;
+  color: #ffffff;
+  top: 34px;
+}
+
+.froms {
+  left: 65px;
+}
+
+.befores{
+  left: 212px;
 }
 
 .of-before {
@@ -891,10 +908,10 @@ fieldset .button-blue {
   cursor: pointer;
   text-transform: uppercase;
   margin-top: 12px;
-  text-align: center;
   color: #ffffff;
   line-height: 21px;
-  padding: 5px 0;
+  padding: 6px 0;
+  padding-left: 84px;
   background-color: transparent;
   border: 2px solid #ffffff;
 }
@@ -905,6 +922,7 @@ fieldset .button-blue {
 
 .before {
   border-left: none;
+  padding-left: 76px;
 }
 
 .infrast svg {
@@ -914,7 +932,7 @@ fieldset .button-blue {
 
 .range {
   position: relative;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .range-gray {
@@ -937,7 +955,7 @@ fieldset .button-blue {
 
 .range-tumbler {
   position: absolute;
-  top: 50%;
+  top: 6%;
   left: 0;
   border: 1px solid gray;
   width: 21px;
@@ -977,7 +995,7 @@ fieldset .button-blue {
 }
 
 .present {
-  margin-top: 32px;
+  margin-top: 11px;
   text-align: center;
 }
 
@@ -1009,11 +1027,11 @@ fieldset .button-blue {
   line-height: 18px;
 }
 
-label[for="price"] {
+.option label:nth-of-type(1) {
   color: #81b3d2;
 }
 
-label[for="type"] {
+.option label:nth-of-type(2) {
   margin-left: 28px;
   margin-right: -5px;
 }
