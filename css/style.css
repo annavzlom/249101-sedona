@@ -60,7 +60,7 @@ a:focus {
   background-color: #746665;
   background-position: center -40px;
   position: relative;
-  height: 216px;
+  min-height: 216px;
 }
 
 .range-tumbler {
@@ -133,7 +133,7 @@ a:focus {
   color: #000000;
 }
 
-.search input[type="text"]::-ms-input-placeholder {
+.search input::-ms-input-placeholder {
   color: #000000;
 }
 
@@ -289,7 +289,7 @@ a:focus {
   border: none;
   background-color: #f2f2f2;
   color: #a9a9a9;
-  padding: 7px 13px;
+  padding: 7px 14px;
 }
 
 .search .minus:hover,
@@ -404,8 +404,8 @@ input[type="radio"] {
   margin-left: 17px;
 }
 
-.site-navigation li:nth-of-type(3) {
-  margin-left: 20%;
+.site-navigation li:nth-of-type(2) {
+
 }
 
 .main-header-logo {
@@ -484,7 +484,6 @@ input[type="radio"] {
   flex-wrap: wrap;
   width: 100%;
   padding-left:0;
-  padding-bottom: 5px;
   background-color: #eeeeee;
 }
 
@@ -686,7 +685,7 @@ img.welcome-container-image-c {
 .popup-content {
   border: none;
   padding: 41px 0;
-  /*padding-left: 57px;*/
+  padding-right: 52px;
   margin: 0;
   min-width: auto;
 }
@@ -706,15 +705,15 @@ img.welcome-container-image-c {
   font-weight: bold;
   line-height: 26px;
   padding: 7px 11px;
-  padding-left: 20px;
-  padding-right: 109px;
+  padding-left: 11px;
+  padding-right: 179px;
   margin-left: 21px;
   background-color: #f2f2f2;
   border: none;
 }
 
 .popup-content .arrival-date {
-  margin-left: 28px;
+  margin-left: 25px;
 }
 
 .calendar {
@@ -723,13 +722,12 @@ img.welcome-container-image-c {
   right: 58px;
   margin-top: 2px;
   border: none;
-  background-color: #f2f2f2;
+  background-color: transparent;
 }
 
 .popup-label {
   line-height: 26px;
-  padding-left: 40px;
-  /*padding: 0 40px;*/
+  padding-left: 58px;
   color: #000000;
 }
 
@@ -741,8 +739,8 @@ img.welcome-container-image-c {
 .fill {
   display: flex;
   justify-content: space-between;
-  margin-top: 26px;
-  padding: 0 30px;
+  margin-top: 25px;
+  padding: 0 56px;
 }
 
 .plusminus {
@@ -751,15 +749,15 @@ img.welcome-container-image-c {
 }
 
 .fill input {
-  width: 20px;
-  padding: 0;
+  width: 41px;
+  padding: 7px 3px;
   margin-left: 0;
   text-align: center
 }
 
 .children {
   margin-top: 3px;
-  margin-right: 52px;
+  margin-left: 5px;
 }
 
 .adult,
@@ -769,36 +767,33 @@ img.welcome-container-image-c {
 
 .adult {
   margin-top: 3px;
-  margin-right: 20px;
+  margin-right: 48px;
 }
 
 .adult label {
   position: relative;
-  padding-right: 67px;
-  top: 9px;
+  margin-right: 42px;
+  padding: 9px 0;
 }
 
 .children label {
-  margin-right: 29px;
-  margin-top: 9px;
+  padding-right: 32px;
+  margin-top: 11px;
 }
 
 .children input {
-  padding-left: 5px;
+  padding-right: 3px;
 }
 
 .button-blue {
-  display: flex;
-  width: 460px;
-  justify-content: center;
   color: #ffffff;
   font-weight: bold;
   font-size: 21px;
   border: none;
-  margin: 52px 0;
-  margin-left: -2px;
+  margin: 52px auto;
   margin-bottom: 14px;
-  padding: 17px 10px;
+  padding: 17px 195px;
+  margin-left: 58px;
   text-transform: uppercase;
   background-color: #81b3d2;
 }
@@ -813,6 +808,7 @@ img.welcome-container-image-c {
   display: flex;
   width: 100%;
   padding: 20px 0;
+  padding-bottom: 0;
 }
 
 .infrast-block {
@@ -824,7 +820,7 @@ img.welcome-container-image-c {
 }
 
 .subject-block  {
-  margin-bottom: 23px;
+  padding-bottom: 8px;
 }
 
 .custom-checkbox + label {
@@ -850,9 +846,11 @@ img.welcome-container-image-c {
   background: url("../img/checkbox-on.svg")
 }
 
+/*не работает*/
 .custom-checkbox + label:disabled {
   background: url("../img/checkbox-disabled.svg");
 }
+/**/
 
 .infrast-block .parking-wifi {
   margin-left: 14px;
@@ -1006,8 +1004,8 @@ img.welcome-container-image-c {
 }
 
 .option {
-  width: 50%;
-  margin-left: 73px;
+  width: 59%;
+  padding-left: 73px;
   margin-top: 5px;
 }
 
@@ -1044,7 +1042,7 @@ img.welcome-container-image-c {
 
 .switch {
   width: 5%;
-  margin-left: 34.8%;
+  margin-left: 32%;
   margin-top: 10px;
 }
 
@@ -1075,6 +1073,14 @@ img.welcome-container-image-c {
 
 .relation {
   flex-grow: 1;
+}
+
+.hotel-price {
+  display: flex;
+}
+
+.reservation {
+  margin-left: 5px;
 }
 
 .relation p {
@@ -1143,6 +1149,9 @@ img.welcome-container-image-c {
   border-top: 1px solid #e5e5e5;
 }
 
+/*Префиксы футер инфо*/
+
+/**/
 .footer-info {
   min-height: 122px;
   position: relative;
