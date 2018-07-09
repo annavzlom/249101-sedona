@@ -78,6 +78,11 @@ a:focus {
   cursor: pointer;
 }
 
+.present button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
 .subject {
   cursor: pointer;
   font-size: 16px;
@@ -103,7 +108,6 @@ a:focus {
 
 .active a {
   color: #766357;
-  margin-left: 20px;
 }
 
 .option label {
@@ -342,28 +346,7 @@ input[type="radio"] {
   margin: -1px;
 }
 
-.filter .of-before {
- -moz-color: #ffffff;
- -webkit-color: #ffffff;
- -ms-color: #ffffff;
- color: #ffffff;
-}
 
-/*.filter input[type="text"]::-webkit-input-placeholder {
-  color: #ffffff;
-}
-
-.filter input[type="text"]:-ms-input-placeholder {
-  color: #ffffff;
-}
-
-.filter input[type="text"]::-ms-input-placeholder {
-  color: #ffffff;
-}
-
-.filter input[type="text"]::placeholder {
-  color: #ffffff;
-}*/
 
 .wrapper {
   position: relative;
@@ -383,21 +366,21 @@ input[type="radio"] {
 }
 
 .site-navigation {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
-  max-width: 100%;
-  height: 55px;
+  width: 100%;
+  min-height: 55px;
   margin: 0;
-  padding: 0;
+  padding-left: 0;
   margin-top: 0;
   list-style: none;
 }
 
 .site-navigation li {
+  text-align: center;
   width: 20%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  padding: 13px 0;
 }
 
 .index-hotel {
@@ -405,7 +388,7 @@ input[type="radio"] {
 }
 
 .site-navigation li:nth-of-type(2) {
-
+ margin-right: 20%;
 }
 
 .main-header-logo {
@@ -693,6 +676,7 @@ img.welcome-container-image-c {
 .popup-content p {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .popup-content p:nth-of-type(2) {
@@ -706,10 +690,12 @@ img.welcome-container-image-c {
   line-height: 26px;
   padding: 7px 11px;
   padding-left: 11px;
-  padding-right: 179px;
+  padding-right: 37px;
   margin-left: 21px;
   background-color: #f2f2f2;
   border: none;
+  width: 340px;
+  min-height: 40px;
 }
 
 .popup-content .arrival-date {
@@ -719,8 +705,9 @@ img.welcome-container-image-c {
 .calendar {
   position: absolute;
   outline: none;
-  right: 58px;
-  margin-top: 2px;
+  right: 5px;
+  margin-top: -14px;
+  top: 50%;
   border: none;
   background-color: transparent;
 }
@@ -740,7 +727,9 @@ img.welcome-container-image-c {
   display: flex;
   justify-content: space-between;
   margin-top: 25px;
-  padding: 0 56px;
+  /*padding: 0 56px;*/
+  margin-left: 56px;
+
 }
 
 .plusminus {
@@ -752,7 +741,7 @@ img.welcome-container-image-c {
   width: 41px;
   padding: 7px 3px;
   margin-left: 0;
-  text-align: center
+  text-align: center;
 }
 
 .children {
@@ -843,14 +832,13 @@ img.welcome-container-image-c {
 
 .custom-checkbox:checked + label:before {
   width: 27px;
-  background: url("../img/checkbox-on.svg")
+  background: url("../img/checkbox-on.svg")  0 0 no-repeat
 }
 
-/*не работает*/
-.custom-checkbox + label:disabled {
-  background: url("../img/checkbox-disabled.svg");
+/*svg*/
+.custom-checkbox:disabled + label {
+  background: url("../img/checkbox-disabled.svg")  0 0 no-repeat;
 }
-/**/
 
 .infrast-block .parking-wifi {
   margin-left: 14px;
