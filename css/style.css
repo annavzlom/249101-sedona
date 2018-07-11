@@ -108,7 +108,7 @@ a:focus {
 }
 
 .site-navigation a:active {
-  color: #cacaca;
+  color: rgba( 0, 0, 0, 0.3);
 }
 
 .active a {
@@ -181,7 +181,9 @@ a:focus {
 
 .visitsedona {
   color: #000000;
-  margin-top: 10px;
+  line-height: 26px;
+  margin-top: 12px;
+  margin-left: 5px;
 }
 
 .main-caption {
@@ -199,6 +201,7 @@ a:focus {
   background-color: #766357;
   border: none;
   width: 100%;
+  outline: 0;
 }
 
 .search .blue {
@@ -212,7 +215,7 @@ a:focus {
 
 .quest:active {
   background-color: #503e33;
-  color: #766860;
+  color: rgba( 255, 255, 255, 0.3);
   outline: 0;
 }
 
@@ -234,25 +237,16 @@ a:focus {
 
 .button-blue:hover {
   background-color: #669ec0;
-  color: #88b6d1;
 }
 
 .button-blue:active {
   background-color: #5496bd;
-  color: #7aadcb;
+  color: rgba( 255, 255, 255, 0.3);
   outline: 0;
 }
 
 .academy a {
   margin-left: 3px;
-}
-
-.academy a:hover {
-  fill: #81b3d2;
-}
-
-.academy a:active {
-  fill: #c2c0c1;
 }
 
 .key {
@@ -265,7 +259,7 @@ a:focus {
 
 .key:active {
   background-color: #5496bd;
-  color: #88b6d1;
+  color: rgba( 255, 255, 255, 0.3);
 }
 
 .pin {
@@ -279,7 +273,7 @@ a:focus {
 
 .pin:active {
   background-color: #503e33;
-  color: #857871;
+  color: rgba( 255, 255, 255, 0.4)
 }
 
 .relation a {
@@ -298,7 +292,7 @@ a:focus {
 }
 
 .places:active {
-  color: #cacaca;
+  color: rgba( 0, 0, 0, 0.2);
 }
 
 .hotels span {
@@ -336,8 +330,8 @@ a.academy-link:hover path {
   fill: #81b3d2;
 }
 
-.academy-link:active path {
-  fill: #c2c0c1;
+a.academy-link:active path {
+  fill: rgba( 0, 0, 0, 0.2);
 }
 
 a.indicator:hover path {
@@ -446,7 +440,7 @@ a.social-button:active path {
 }
 
 .cite {
-  margin-top: 30px;
+  margin-top: 28px;
   width: 550px;
   line-height: 26px;
 }
@@ -510,7 +504,7 @@ a.social-button:active path {
   flex-wrap: wrap;
   width: 100%;
   padding-left:0;
-  background-color: #eeeeee;
+  background-color: #ffffff;
   padding-bottom: 4px;
 }
 
@@ -558,7 +552,7 @@ a.social-button:active path {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   max-width: 100%;
   margin-top: -2px;
   min-height: 256px;
@@ -567,7 +561,7 @@ a.social-button:active path {
 }
 
 .bottom .feature-item {
-  padding: 35px 60px;
+  padding: 33px 60px;
 }
 
 .bottom .vantage {
@@ -602,7 +596,7 @@ a.social-button:active path {
 
 .heading {
   text-align: center;
-  margin-top: 52px;
+  margin-top: 48px;
   margin-bottom: 23px;
   font-size: 30px;
   line-height: 36px;
@@ -759,17 +753,18 @@ img.welcome-container-image-c {
   border: none;
   width: 340px;
   min-height: 40px;
+  flex-grow: 1;
 }
 
 .popup-content .arrival-date {
-  margin-left: 25px;
+  margin-left: 21px;
 }
 
 .calendar {
   position: absolute;
   outline: none;
   right: 5px;
-  margin-top: -14px;
+  margin-top: -12px;
   top: 50%;
   border: none;
   background-color: transparent;
@@ -779,6 +774,8 @@ img.welcome-container-image-c {
   line-height: 26px;
   padding-left: 58px;
   color: #000000;
+  width: 150px;
+  flex-shrink: 0
 }
 
 .popup-content svg {
@@ -824,7 +821,7 @@ img.welcome-container-image-c {
 }
 
 .adult {
-  margin-top: 3px;
+  margin-top: 4px;
   margin-right: 48px;
 }
 
@@ -842,7 +839,7 @@ img.welcome-container-image-c {
 }
 
 .children input {
-  padding-right: 3px;
+  padding-right: 8px;
 }
 
 .button-blue {
@@ -1031,7 +1028,6 @@ img.welcome-container-image-c {
   border-radius: 100%;
   border: none;
   margin-top: -10px;
-  font-size: 0;
   background-color: #ffffff;
   cursor: pointer;
   -webkit-transition: all 1s ease-out;
@@ -1072,11 +1068,11 @@ img.welcome-container-image-c {
   display: flex;
   width: 100%;
   padding: 25px 0;
+  padding-left: 73px;
 }
 
 .option {
-  width: 59%;
-  padding-left: 73px;
+  width: 70%;
   margin-top: 5px;
 }
 
@@ -1114,7 +1110,7 @@ img.welcome-container-image-c {
 
 .switch {
   width: 5%;
-  margin-left: 32%;
+  margin-left: 20.5%;
   margin-top: 10px;
 }
 
@@ -1175,7 +1171,7 @@ img.welcome-container-image-c {
 }
 
 .relation p {
-  margin-top: 5px;
+  margin-top: 7px;
   margin-bottom: 18px;
 }
 
@@ -1217,6 +1213,7 @@ img.welcome-container-image-c {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
+  margin-top: 4px;
 }
 
 .rating .desert {
